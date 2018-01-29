@@ -24,9 +24,10 @@
       */ 
       const window = root;
       const document = root.document;
-      const NightMode = {};
+      const NightMode = function () {
+        
+      };
       let supports  = 'querySelector' in document && 'addEventListener' in window; // Testing features!
-  
       
       
       
@@ -37,20 +38,6 @@
       
       
       // Public API
-      NightMode.destroy = function() {
-        alert('destroy the plugin')
-      };    
-  
-      NightMode.init = function() {
-        alert('init the plugin')
-      };
-  
-      document.onreadystatechange = function () {
-        if (document.readyState == "interactive") {
-    
-            //NightMode.init();
-        }
-      }
   
       return NightMode;
 
