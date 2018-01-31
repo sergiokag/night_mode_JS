@@ -179,8 +179,9 @@
           {
               for (key in arguments[i])
               {
-                  if (arguments[i].hasOwnProperty(key))
-                      arguments[0][key] = arguments[i][key];
+                  if (arguments[i].hasOwnProperty(key)) {
+                    arguments[0][key] = arguments[i][key];
+                  }
               }
           }
     
