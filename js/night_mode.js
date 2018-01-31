@@ -39,7 +39,7 @@
 
 
 
-
+      
 
 
           
@@ -211,29 +211,22 @@
 
 
 
-
-
-                      
-    };
-    // end of the function contructor
-
-
-
-
-
-
-            
+      
+      
+      
       //API
 
 
 
 
 
-
-            
+      /**
+       * Destroy method
+       * @public
+       */
       // TO DO DIMITRIS
-      NightMode.prototype.destroy = function() {
-        alert('destroy')
+      this.destroy = function() {
+        console.log('destroy')
       };
 
 
@@ -241,10 +234,24 @@
 
 
 
-            
-      NightMode.prototype.init = function() {
-        alert('init')
+      /**
+       * Init method
+       * @public
+       */     
+      // TO DO DIMITRIS       
+      this.init = function() {
+        console.log('init')
       };
+
+
+
+
+
+
+                      
+    };
+    // end of the function contructor
+
 
 
 
