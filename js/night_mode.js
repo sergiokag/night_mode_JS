@@ -91,6 +91,31 @@
 
 
 
+                  
+      /** 
+       * All selected DOM elements for background-color .
+       * @private
+       */
+      const positionShorts = {
+        'topLeft': 'tl',
+        'topRight': 'tr',
+        'bottomLeft': 'bl',
+        'bottomRight': 'br',
+        'top': 'top',
+        'bottom': 'bottom',
+        'tl': 'tl',
+        'tr': 'tr',
+        'bl': 'bl',
+        'br': 'br',
+        't': 'top',
+        'b': 'bottom'
+      };
+
+
+
+
+
+
             
       /**
        * 
@@ -132,6 +157,7 @@
       const _defaults = {
         isNight: false,
         autoplay: false,
+        btnPosition: positionShorts.topRight,
         customColors: null,
       };
 
