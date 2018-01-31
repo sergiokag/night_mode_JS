@@ -69,7 +69,7 @@
 
           
       /**
-       * All selected DOM elements for text color .
+       * All selected DOM elements for text color.
        * @private
        */
       const $elsColor = [];
@@ -81,7 +81,7 @@
 
             
       /** 
-       * All selected DOM elements for background-color .
+       * All selected DOM elements for background-color.
        * @private
        */
       const $elsBgColor = [];
@@ -93,7 +93,7 @@
 
                   
       /** 
-       * All selected DOM elements for background-color .
+       * All posible positions of the button container.
        * @private
        */
       const positionShorts = {
@@ -155,7 +155,7 @@
        * @private
        */         
       const _defaults = {
-        isNight: false,
+        isNight: false, // ???
         autoplay: false,
         btnPosition: positionShorts.topRight,
         customColors: null,
