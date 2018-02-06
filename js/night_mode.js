@@ -91,6 +91,21 @@
 
 
 
+
+
+
+
+
+      /** 
+       * Holds the current mode of the web app.
+       * @public
+       */
+      this.currentMode = null;
+
+
+
+
+
                   
       /** 
        * All posible positions of the button container.
@@ -155,9 +170,8 @@
        * @public
        */         
       this._defaults = {
-        isNight: false, // ???
         autoplay: false,
-        btnPosition: positionShorts.topRight,
+        btnPosition: this.positionShorts.topRight,
         customColors: null,
       };
 
@@ -199,7 +213,7 @@
        * @public
        */
       // TO DO CHRISTOS
-      this._options = extend({}, _defaults , options);
+      this._options = extend({}, this._defaults , options);
 
 
 
@@ -218,6 +232,46 @@
 
 
 
+
+      /**
+       * Cached obj
+       * @private
+       *  
+       */
+      const __cache__ = {
+
+      };
+
+
+
+
+       /**
+       * Cached obj
+       * @private
+       *  
+       */
+      const applyCachedColors = function (obj, currentMode) {
+        // iterate the objs
+        // and apply the colors
+      };     
+
+
+
+
+      /**
+       * Caching
+       * @private
+       *  
+       */
+
+      const memorizer = function() {
+
+        // use cached obj
+        // where colors are stored
+        // apply colors
+        applyCachedColors(__cache__, mode);
+
+      };
 
 
       /**
