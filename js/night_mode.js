@@ -46,9 +46,9 @@
       /**
        * If not optios have been passed
        * then use {}
-       * @private
+       * @public
        */
-      options = options || {};
+      this.options = options || {};
       
 
 
@@ -58,9 +58,9 @@
                 
       /**
        * Variable to store the daytime
-       * @private
+       * @public
        */
-      let _daytime = null;
+      this._daytime = null;
       
 
 
@@ -70,9 +70,9 @@
           
       /**
        * All selected DOM elements for text color.
-       * @private
+       * @public
        */
-      const $elsColor = [];
+      this.$elsColor = [];
 
 
 
@@ -82,9 +82,9 @@
             
       /** 
        * All selected DOM elements for background-color.
-       * @private
+       * @public
        */
-      const $elsBgColor = [];
+      this.$elsBgColor = [];
 
 
 
@@ -94,9 +94,9 @@
                   
       /** 
        * All posible positions of the button container.
-       * @private
+       * @public
        */
-      const positionShorts = {
+      this.positionShorts = {
         'topLeft': 'tl',
         'topRight': 'tr',
         'bottomLeft': 'bl',
@@ -120,9 +120,9 @@
       /**
        * 
        * Check if day or night
-       * @private
+       * @public
        */        
-      const checkIfDayOrNight =  function() {
+      this.checkIfDayOrNight =  function() {
       
         let now = new Date();
         let hour = now.getHours();
@@ -152,9 +152,9 @@
             
       /**
        * Default options for the plugin.
-       * @private
+       * @public
        */         
-      const _defaults = {
+      this._defaults = {
         isNight: false, // ???
         autoplay: false,
         btnPosition: positionShorts.topRight,
@@ -196,10 +196,10 @@
               
       /**
        * Current options set by the caller including defaults.
-       * @private
+       * @public
        */
       // TO DO CHRISTOS
-      const _options = extend({}, _defaults , options);
+      this._options = extend({}, _defaults , options);
 
 
 
