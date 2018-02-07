@@ -67,33 +67,6 @@
 
 
 
-          
-      /**
-       * All selected DOM elements for text color.
-       * @public
-       */
-      this.$elsColor = [];
-
-
-
-
-
-
-            
-      /** 
-       * All selected DOM elements for background-color.
-       * @public
-       */
-      this.$elsBgColor = [];
-
-
-
-
-
-
-
-
-
 
 
       /** 
@@ -130,8 +103,7 @@
 
 
 
-
-            
+        
       /**
        * 
        * Check if day or night
@@ -220,18 +192,6 @@
 
 
 
-      //   rest of the private code
-
-
-
-
-      
-      
-      
-      //API
-
-
-
 
       /**
        * Cached obj
@@ -239,6 +199,16 @@
        *  
        */
       const __cache__ = {
+
+        default_colors  : {
+          txt : {},
+          bg  : {}
+        },
+
+        inverted_colors : {
+          txt : {},
+          bg  : {}          
+        },
 
       };
 
@@ -259,7 +229,7 @@
 
 
       /**
-       * Caching
+       * Using cache obj
        * @private
        *  
        */
@@ -269,7 +239,7 @@
         // use cached obj
         // where colors are stored
         // apply colors
-        applyCachedColors(__cache__, mode);
+        applyCachedColors(__cache__, stateMode);
 
       };
 
