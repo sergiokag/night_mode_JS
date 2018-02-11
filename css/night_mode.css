@@ -13,3 +13,11 @@
 [class*=" nm-txt-color-"] {
   transition: color .4s ease-in-out;
 }
+
+/**
+ * Styles for buttons
+ */
+
+.nm-btn-default{
+	cursor: pointer;
+}
