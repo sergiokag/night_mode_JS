@@ -151,7 +151,6 @@
 
 
 
-
             
       /**
        * 
@@ -176,9 +175,6 @@
 
 
 
-
-
-
               
       /**
        * Current options set by the caller including defaults.
@@ -189,38 +185,65 @@
 
 
       
-      // Buttons
+      /**
+       * Create buttons
+       * @public
+       * 
+       */
 
-      const create_div = document.createElement('div'); //create div
-      document.body.appendChild(create_div); //make div child of body
-      create_div.classList.add('nm-btn-wrapper');// add class    
-
-      onst button_day = document.createElement('button'); //create button
-      button_day.classList.add('nm-btn-default'); //add class
-      button_day.id = 'btn_day'; //add id
-      create_div.appendChild(button_day); //make button_day child of div    
-
-      const button_night = document.createElement('button'); //create second button
-      button_night.classList.add('nm-btn-default'); //add class
-      button_night.id = 'btn_night'; //add id
-      create_div.appendChild(button_night);//make button_night child of id    
-
-      const img_day = document.createElement('img'); //create img
-      //function to add attributes to images
-      function setAttributes(elem, attrs) {
-        for(let i in attrs) {
-          elem.setAttribute(i, attrs[i]);
+      this.createButtons = function () {
+        
+        //create div
+        const create_div = document.createElement('div');
+        //make div child of body
+        document.body.appendChild(create_div);
+        // add class    
+        create_div.classList.add('nm-btn-wrapper');
+  
+         //create button
+        const button_day = document.createElement('button');
+         //add class
+        button_day.classList.add('nm-btn-default');
+         //add id
+        button_day.id = 'btn_day';
+         //make button_day child of div    
+        create_div.appendChild(button_day);
+        
+         //create second button
+        const button_night = document.createElement('button');
+         //add class
+        button_night.classList.add('nm-btn-default');
+         //add id
+        button_night.id = 'btn_night';
+        //make button_night child of id    
+        create_div.appendChild(button_night);
+         //create img
+        const img_day = document.createElement('img');
+        //function to add attributes to images
+        function setAttributes(elem, attrs) {
+          for(let i in attrs) {
+            elem.setAttribute(i, attrs[i]);
+          };
         };
+         //make img child of button_day    
+        setAttributes(img_day, {'src':'images/sun.svg', 'alt': 'sun icon'});
+        button_day.appendChild(img_day);
+        // add event listener
+        button_day.addEventListener('click', function() {
+          console.log('button_day')
+        });
+        
+         //create 2nd img
+        const img_night = document.createElement('img');
+         //CORRECT names of svg
+        setAttributes(img_night, {'src':'images/moon.svg', 'alt': 'moon icon'});
+         //make img child of button_night
+        button_night.append(img_night);
+        // add event listener
+        button_night.addEventListener('click', function() {
+          console.log('button_night')
+        });
       };
-      setAttributes(img_day, {'src':'images/sun.svg', 'alt': 'sun icon'});
-      button_day.appendChild(img_day); //make img child of button_day    
-      
-
-      const img_night = document.createElement('img'); //create 2nd img
-      setAttributes(img_night, {'src':'images/moon.svg', 'alt': 'moon icon'}); //CORRECT names of svg
-      button_night.append(img_night); //make img child of button_night
-
-
 
 
 
@@ -276,12 +299,31 @@
 
 
       /**
+       * start method
+       * @public
+       */
+      this.start = function() {
+        this.destroy();
+
+        this.createButtons();
+      };
+
+
+
+
+      /**
        * Destroy method
        * @public
        */
       // TO DO DIMITRIS
       this.destroy = function() {
-        console.log('destroy')
+
+          // remove the the div with the buttons
+          const elem = document.querySelector('.nm-btn-wrapper');
+          if ( elem ) {
+            elem.parentNode.removeChild(elem);
+          }    
+
       };
 
 
@@ -295,7 +337,8 @@
        */     
       // TO DO DIMITRIS       
       this.init = function() {
-        console.log('init')
+        console.log('init');
+        this.start();
       };
 
 
