@@ -199,6 +199,10 @@
         document.body.appendChild(create_div);
         // add class    
         create_div.classList.add('nm-btn-wrapper');
+        // add style
+        create_div.style.position = "fixed";
+        create_div.style.top  = "0";
+        create_div.style.right = "0";
   
          //create button
         const button_day = document.createElement('button');
