@@ -188,6 +188,37 @@
       this._options = extend({}, this._defaults , options);
 
 
+      
+      // Buttons
+
+      const create_div = document.createElement('div'); //create div
+      document.body.appendChild(create_div); //make div child of body
+      create_div.classList.add('nm-btn-wrapper');// add class    
+
+      onst button_day = document.createElement('button'); //create button
+      button_day.classList.add('nm-btn-default'); //add class
+      button_day.id = 'btn_day'; //add id
+      create_div.appendChild(button_day); //make button_day child of div    
+
+      const button_night = document.createElement('button'); //create second button
+      button_night.classList.add('nm-btn-default'); //add class
+      button_night.id = 'btn_night'; //add id
+      create_div.appendChild(button_night);//make button_night child of id    
+
+      const img_day = document.createElement('img'); //create img
+      //function to add attributes to images
+      function setAttributes(elem, attrs) {
+        for(let i in attrs) {
+          elem.setAttribute(i, attrs[i]);
+        };
+      };
+      setAttributes(img_day, {'src':'images/sun.svg', 'alt': 'sun icon'});
+      button_day.appendChild(img_day); //make img child of button_day    
+      
+
+      const img_night = document.createElement('img'); //create 2nd img
+      setAttributes(img_night, {'src':'images/moon.svg', 'alt': 'moon icon'}); //CORRECT names of svg
+      button_night.append(img_night); //make img child of button_night
 
 
 
