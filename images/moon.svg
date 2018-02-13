@@ -4,50 +4,5 @@
   <svg  viewBox="-24 -5 100 100" width="40" height="40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">          <!--aria makes the browsers and devices recongise the title and description-->
     <title>Moon</title>                                                                     <!--the <title> enables screen readers to differentiate this chunk of SVG content from any other on the page.-->
     <desc>A black mmon created for the Night Mode App project</desc>                         <!--The description of the svg-->
-    <path d="M50 20 A40 40 0 1 0 50 70 30 30 0 1 1 50 20z" stroke="black" stroke-width="3" fill="white"/>
-    <path  d="
-      M 50.000 32.000
-      L 54.000 36.928
-      L 51.732 31.000
-      L 58.000 30.000
-      L 51.732 29.000
-      L 54.000 23.072
-      L 50.000 28.000
-      L 46.000 23.072
-      L 48.268 29.000
-      L 42.000 30.000
-      L 48.268 31.000
-      L 46.000 36.928
-      z
-      "/>
-      <path  d="
-      M 70.000 47.000
-      L 74.000 51.928
-      L 71.732 46.000
-      L 78.000 45.000
-      L 71.732 44.000
-      L 74.000 38.072
-      L 70.000 43.000
-      L 66.000 38.072
-      L 68.268 44.000
-      L 62.000 45.000
-      L 68.268 46.000
-      L 66.000 51.928
-      z
-      "/>
-      <path  d="
-      M 50.000 62.000
-      L 54.000 66.928
-      L 51.732 61.000
-      L 58.000 60.000
-      L 51.732 59.000
-      L 54.000 53.072
-      L 50.000 58.000
-      L 46.000 53.072
-      L 48.268 59.000
-      L 42.000 60.000
-      L 48.268 61.000
-      L 46.000 66.928
-      z
-      "/>
+    <path d="M50 20 A40 40 0 1 0 50 70 30 30 0 1 1 50 20z" stroke="black" stroke-width="10" fill="white"/>
   </svg>
