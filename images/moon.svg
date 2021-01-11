@@ -1,8 +1,0 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-  <svg  viewBox="-24 -5 100 100" width="40" height="40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">          <!--aria makes the browsers and devices recongise the title and description-->
-    <title>Moon</title>                                                                     <!--the <title> enables screen readers to differentiate this chunk of SVG content from any other on the page.-->
-    <desc>A black mmon created for the Night Mode App project</desc>                         <!--The description of the svg-->
-    <path d="M50 20 A40 40 0 1 0 50 70 30 30 0 1 1 50 20z" stroke="black" stroke-width="10" fill="white"/>
-  </svg>
