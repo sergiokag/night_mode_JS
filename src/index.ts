@@ -1,2 +1,4 @@
 const message: string = 'Hello Night Mode';
-alert(message);
+console.log(message);
+
+module.exports = message;

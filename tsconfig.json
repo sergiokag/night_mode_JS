@@ -6,7 +6,11 @@
     "sourceMap": true,
     "inlineSources": true,
     "rootDir": "src/",
-    "outDir": "web/js"
+    "outDir": "web/js",
+    "lib": [
+      "DOM",
+      "ES6"
+    ]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
