@@ -1,4 +1,2 @@
-const message: string = 'Hello Night Mode';
+export const message: string = 'Hello Night Mode';
 console.log(message);
-
-module.exports = message;
